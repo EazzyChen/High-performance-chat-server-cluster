@@ -1,0 +1,8 @@
+telnet 127.0.0.1 9999
+register: {"msgid":3, "name":"aa", "password":"111111"}
+login: {"msgid":1,"id":100000,"password":"111111"}  {"msgid":1,"id":100001,"password":"111111"}
+chat: {"msgid":5,"fromid":100000,"name":"aa", "toid":100001,"msg":"hello bb 2"}
+add friend:{"msgid":6,"userid":100000,"friendid":100003}
+create group:{"msgid":7, "userid": 100000, "groupname": "fuckclub", "groupdesc": "join to know how to fuck happily"}
+join group:{"msgid":8, "userid": 100001, "groupid":1001}
+get group list:{"msgid":9, "userid": 100000}
